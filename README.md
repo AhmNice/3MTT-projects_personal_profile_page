@@ -13,4 +13,3 @@ This is a personal portfolio webpage for **Musa Muhammed Awwal**, a 300-level Co
 - **HTML5** (For structure)
 - **CSS3** (For styling)
 
-## 📂 Project Structure
