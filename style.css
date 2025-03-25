@@ -1,3 +1,4 @@
+/* General Styling */
 html {
     scroll-behavior: smooth;
 }
@@ -8,6 +9,8 @@ body {
     background-color: #f4f4f4;
     text-align: center;
 }
+
+/* Header & Navigation */
 header {
     background-color: #333;
     color: white;
@@ -28,20 +31,52 @@ nav a {
     text-decoration: none;
     color: white;
 }
-.bio, .hobbies, footer {
+
+/* Main Content Layout */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* About Me Section */
+.bio {
     background-color: white;
     padding: 20px;
     margin: 20px auto;
-    width: 80%;
-    max-width: 1200px; /* Limits width on larger screens for readability */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.bio img {
+
+/* Improved Layout with Flexbox */
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+.profilePix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profilePix img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-top: 10px;
+}
+.bioText {
+    max-width: 80%;
+    text-align: left;
+}
+
+/* Hobbies Section */
+.hobbies {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .hobbies ul {
     list-style-type: none;
@@ -51,6 +86,15 @@ nav a {
 .hobbies li {
     margin-bottom: 10px;
 }
+
+/* Footer */
+footer {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 footer ul {
     list-style-type: none;
     padding: 0;
@@ -58,17 +102,4 @@ footer ul {
 footer a {
     color: black;
     text-decoration: none;
-}
-.aboutSection {
-    display: grid;
-    grid-template-columns: 30% 60%;
-    gap: 10px;
-}
-.aboutSection p {
-    text-align: left;
-}
-.profilePix {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Ensures vertical centering */
 }
