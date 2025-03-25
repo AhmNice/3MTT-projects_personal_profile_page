@@ -1,7 +1,7 @@
-# Musa Muhammed Awwal - Personal Portfolio
+# Musa Muhammed Awwal -My Personal Portfolio
 
 ## 📌 Project Overview
-This is a personal portfolio webpage for **Musa Muhammed Awwal**, a 300-level Computer Science student at **Bayero University Kano**. The webpage highlights his background, skills, hobbies, and contact information.
+This is my personal portfolio webpage, I am **Musa Muhammed Awwal**, a 300-level Computer Science student at **Bayero University Kano**. The webpage highlights his background, skills, hobbies, and contact information.
 
 ## 🚀 Features
 - **Semantic HTML Structure**: Uses `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, and `<footer>` for better organization.
