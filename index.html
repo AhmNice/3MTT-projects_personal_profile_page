@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             text-align: center;
-            scroll-behavior: smooth;
         }
         header {
             background-color: #333;
             color: white;
             padding: 15px;
         }
-        nav p {
-            display: inline;
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        nav a {
+            display: inline-block;
             margin: 0 15px;
             cursor: pointer;
             font-weight: bold;
+            text-decoration: none;
+            color: white;
         }
         .bio {
             background-color: white;
@@ -46,17 +57,29 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .hobbies ol {
+            list-style-type: disc;
+            text-align: left;
+        }
         footer ul {
             list-style-type: none;
             padding: 0;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        footer a {
+            color: black;
+            text-decoration: none;
         }
-        a{
-            text-decoration:none;
-            color:white;
+        .aboutSection {
+            display: grid;
+            grid-template-columns: 30% 60%;
+            gap: 10px;
+        }
+        .aboutSection p {
+            text-align: left;
+        }
+        .profilePix {
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -65,17 +88,46 @@
         <h1>My Profile</h1>
         <nav>
             <ul>
-                <li><a href='#bio'>About Me</a></li>
-                <li><a href ="#hobbies">Hobbies</a></li>
+                <li><a href="#bio">About Me</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <section class="bio" id="bio">
         <h2>My Bio</h2>
-        <img width="150px" height="150px" src="https://avatars.githubusercontent.com/u/100824196?s=400&u=70f46c75027006dc8f9908788a8fd232fc73ab75&v=4" alt="Musa_Muhammed_Awwal profile_picture">
-        <article>I am Musa Muhammed Awwal, a student at Bayero University Kano, a 300-level student in the Department of Computer Science.</article>
+        <div class="aboutSection">
+            <div class="profilePix">
+                <img src="https://avatars.githubusercontent.com/u/100824196?s=400&u=70f46c75027006dc8f9908788a8fd232fc73ab75&v=4" alt="Musa Muhammed Awwal profile picture">
+            </div>
+            <div>
+                <p>
+                    I am <strong>Musa Muhammed Awwal</strong>, a passionate 
+                    <strong>300-level Computer Science student</strong> at 
+                    <strong>Bayero University Kano</strong>. With a strong foundation 
+                    in programming and software development, I am constantly exploring 
+                    new technologies and honing my skills in web and app development.
+                </p>
+                <p>
+                    I have a keen interest in <strong>building user-friendly applications</strong>, 
+                    problem-solving, and leveraging technology to create impactful solutions. 
+                    Currently, I am working on improving my expertise in 
+                    <strong>React, APIs, and full-stack development</strong>.
+                </p>
+                <p>
+                    Beyond coding, I enjoy learning about emerging tech trends and collaborating 
+                    with like-minded individuals on innovative projects. My goal is to become a 
+                    proficient software engineer, contributing to the ever-evolving world of technology.
+                </p>
+                <p>
+                    Feel free to connect with me—I’m always open to discussions on tech, 
+                    collaboration opportunities, and learning from others!
+                </p>
+            </div>
+        </div>
     </section>
+
     <aside class="hobbies" id="hobbies">
         <h3>My Hobbies</h3>
         <ol>
@@ -84,10 +136,11 @@
             <li>Solving Problems</li>
         </ol>
     </aside>
+
     <footer id="contact">
         <h3>My Contact Details</h3>
         <ul>
-            <li>Email: <a style="color:black;">muhammedawwa770@gmail.com</a></li>
+            <li>Email: <a href="mailto:muhammedawwa770@gmail.com">muhammedawwa770@gmail.com</a></li>
             <li>Facebook: <strong>Ahm Nice</strong></li>
             <li>Instagram: <strong>Ahm_Nice</strong></li>
         </ul>
