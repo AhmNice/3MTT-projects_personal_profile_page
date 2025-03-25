@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #f4f4f4;
             text-align: center;
+            scroll-behavior: smooth;
         }
         header {
             background-color: #333;
@@ -64,18 +65,18 @@
         <h1>My Profile</h1>
         <nav>
             <ul>
-                <li><a href='#'>About Me</a></li>
-                <li><a href ="#">Hobbies</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href='#bio'>About Me</a></li>
+                <li><a href ="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="bio">
+    <section class="bio" id="bio">
         <h2>My Bio</h2>
         <img src="https://avatars.githubusercontent.com/u/100824196?s=400&u=70f46c75027006dc8f9908788a8fd232fc73ab75&v=4" alt="Musa_Muhammed_Awwal profile_picture">
         <article>I am Musa Muhammed Awwal, a student at Bayero University Kano, a 300-level student in the Department of Computer Science.</article>
     </section>
-    <aside class="hobbies">
+    <aside class="hobbies" id="hobbies">
         <h3>My Hobbies</h3>
         <ol>
             <li>Coding</li>
@@ -83,7 +84,7 @@
             <li>Solving Problems</li>
         </ol>
     </aside>
-    <footer>
+    <footer id="contact">
         <h3>My Contact Details</h3>
         <ul>
             <li>Email: <strong>muhammedawwa770@gmail.com</strong></li>
