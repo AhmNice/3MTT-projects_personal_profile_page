@@ -1,42 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <meta name="description" content="Musa Muhammed Awwal - Computer Science student at Bayero University Kano, passionate about web development, React.js, and problem-solving.">
+    <title>Musa Muhammed Awwal | Web Developer & CS Student</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h2>My profile</h2>
+        <h1>Musa Muhammed Awwal</h1>
         <nav>
-            <li><a href="#bio" aria-label="About Me Section">About Me</a></li>
-            <li><a href="#hobbies" aria-label="Hobbies Section">Hobbies</a></li>
-            <li><a href="#contact" aria-label="Contact Section">Contact</a></li>
+            <ul>
+                <li><a href="#bio" aria-label="About Me Section">About Me</a></li>
+                <li><a href="#hobbies" aria-label="Hobbies Section">Hobbies</a></li>
+                <li><a href="#contact" aria-label="Contact Section">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <section class="bio">
-        <h2>My Bio</h2>
-        <img src="https://avatars.githubusercontent.com/u/100824196?s=400&u=70f46c75027006dc8f9908788a8fd232fc73ab75&v=4" alt="my picture">
-        <p>I am Musa Muhammed Awwal, a student to Bayero university kano, a
-            300level student
-            from the department to computer science
-        </p>
-    </section>
-    <section class="hobbies">
-        <h3>My Hobbies</h3>
-        <ol>
-            <li>Coding</li>
-            <li>Football</li>
-            <li>Solving problems</li>
-        </ol>
-    </section>
-    <footer>
-        <h3>My Contact Details</h3>
+
+    <main>
+        <section class="bio" id="bio">
+            <h2>About Me</h2>
+            <div class="bioContainer">
+                <div class="profilePix">
+                    <img src="https://avatars.githubusercontent.com/u/100824196?s=400&u=70f46c75027006dc8f9908788a8fd232fc73ab75&v=4" 
+                         alt="Headshot of Musa Muhammed Awwal">
+                </div>
+                <div class="bioTextContainer">
+                    <p>
+                        I am <strong>Musa Muhammed Awwal</strong>, a passionate 
+                        <strong>300-level Computer Science student</strong> at 
+                        <strong>Bayero University Kano</strong>. With a strong foundation 
+                        in programming and software development, I am constantly exploring 
+                        new technologies and honing my skills in web and app development.
+                    </p>
+                    <p>
+                        I have a keen interest in <strong>building user-friendly applications</strong>, 
+                        problem-solving, and leveraging technology to create impactful solutions. 
+                        Currently, I am working on improving my expertise in 
+                        <strong>React, APIs, and full-stack development</strong>.
+                    </p>
+                    <p>
+                        Beyond coding, I enjoy learning about emerging tech trends and collaborating 
+                        with like-minded individuals on innovative projects. My goal is to become a 
+                        proficient software engineer, contributing to the ever-evolving world of technology.
+                    </p>
+                    <p>
+                        Feel free to connect with me—I’m always open to discussions on tech, 
+                        collaboration opportunities, and learning from others!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hobbies" id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li><strong>Coding:</strong> Currently learning <em>React.js</em> and exploring API integration.</li>
+                <li><strong>Football:</strong> Passionate about both playing and watching. Favorite team: <em>Arsenal</em>.</li>
+                <li><strong>Problem-Solving:</strong> Enthusiastic about algorithm challenges and competitive programming.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
         <ul>
-            <li>Email: <strong> muhammedawwa770@gmail.com</strong></li>
+            <li>Email: <a href="mailto:muhammedawwa770@gmail.com">muhammedawwa770@gmail.com</a></li>
             <li>Facebook: <strong>Ahm Nice</strong></li>
-            <li>Instagram: <strong> Ahm_Nice</strong></li>
+            <li>Instagram: <strong>Ahm_Nice</strong></li>
+            <li>GitHub: <a href="https://github.com/AhmNice" target="_blank">AhmNice</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/musa-muhammed-awwal-3bbb46235/" target="_blank">Musa Muhammed Awwal</a></li>
         </ul>
     </footer>
 </body>
